@@ -1,0 +1,155 @@
+body, h1, p, form {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #141414; 
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+}
+
+#root {
+    height: 100%;
+    width: 100%;
+}
+
+#root > div {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4rem;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+input[type="text"] {
+    padding: 0.5rem 1rem; 
+    border: none;
+    border-radius: 8px;
+    background-color: #292929; 
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+    width: 70%; 
+}
+
+input[type="text"]::placeholder {
+    color: #777; 
+}
+
+button[type="submit"] {
+    padding: 0.5rem 1rem;
+    background-color: #e2e750;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #d68e3c; 
+}
+
+
+#card {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%;
+    background-color: #1c1c1c; 
+    border-radius: 16px; 
+    padding: 2rem;  
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+    gap: 2rem;
+}
+
+#main {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1a1a1a; 
+    border-radius: 16px; 
+    padding: 2rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#main-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#city {
+    font-size: 3rem;
+    color: #fff;
+}
+
+#country {
+    font-size: 1.5rem;
+    color: #ccc;
+}
+
+#temp-value {
+    font-size: 5rem;
+    color: #fff;
+}
+
+#temp-unit {
+    font-size: 2.5rem;
+    color: #ccc;
+}
+
+#weather-icon {
+    width: 5rem;
+    height: 5rem;
+}
+
+.extra-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    gap: 0.4rem;
+}
+
+.extra-header {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #ccc;
+}
+
+#humidity-value, #feels-like-value, #aqi-status {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+#extra {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #191919;
+    border-radius: 16px; 
+    padding: 2rem; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+#humidity-icon, #aqi-icon, #feels-like-icon{
+    width: 3rem;
+    height: 3rem;
+}
